@@ -34,29 +34,47 @@ footer, header, hgroup, menu, nav, section {
 body {
   font-family: Helvetica, Arial, sans-serif;
   color: #222;
+  background-image: linear-gradient(to bottom right, white, #97bbc4);
 }
 
 
 .header {
-	text-align: center;
+	text-align: left;
 	font-size: 50px;
+	margin-left: 10px;
+	color: #5a7f8a;
 }
 
+.twitter_container {
+	width: 500px;
+	margin-left: 10px
+}
+
+#twitter_status {
+	color: #5f7378;
+	padding: 2px;
+	font-size: 18px;
+}
 .tweet {
 	background-color: lightblue;
-	padding: 5px;
+	padding: 10px;
+	border-radius: 10px;
+	border-width: 0.5px;
+	border-style: dashed;
 }
 .tweet_date {
-	font-size: 12px;
-	margin: 5px;
+	font-size: 11px;
+	margin: 2px;
+	opacity: .8;
 }
 
 .tweet_msg {
-	background-color: beige;
+	background-color: #ffffe8;
 	border-style: dotted;
-	border-width: 1px;
-	padding: 5px;
+	border-width: 1px 0px;
+	padding: 10px;
 	font-style: italic;
+	color: #1e4f5c;
 }
 
 .tweet_user {
