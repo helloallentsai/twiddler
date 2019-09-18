@@ -3,7 +3,7 @@
   <head>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
-   
+    <script src="javascript.js"></script>
     <link href="twiddler.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
@@ -14,94 +14,8 @@
       <div class="twitter_content">
       </div>
     </div>
-
-    <script>
-$(document).ready(function(){
-  var $twitterContent = $('.twitter_content');
-
-  var index = streams.home.length - 1;
-  while(index >= 0){
-    var tweet = streams.home[index];
-    var $tweet = $('<div class="tweet"><div class="tweet_date">' + tweet.created_at + '</div><div class="tweet_msg">' + tweet.message + '</div><div class="tweet_user '+tweet.user+'">&mdash;' + tweet.user + '</div></div>');
-    $tweet.fadeIn(500).appendTo($twitterContent);
-    index -= 1;
-  }
-
-  
- $('#home').on('click', function() {
-    $twitterContent.html('');
-    var index = streams.home.length - 1;
-    while(index >= 0){
-      var tweet = streams.home[index];
-      var $tweet = $('<div class="tweet"><div class="tweet_date">' + tweet.created_at + '</div><div class="tweet_msg">' + tweet.message + '</div><div class="tweet_user '+tweet.user+'">&mdash;' + tweet.user + '</div></div>');
-      $tweet.fadeIn(500).appendTo($twitterContent);
-      index -= 1;
-    }
-    $("#home").text('Refresh for New Tweets');
-    $('#twitter_status').text('Latest Tweets');
-  });
-
-
- $(document).on('click', '.shawndrost', function() {
-    $twitterContent.html('');
-    var index = streams.users.shawndrost.length - 1;
-    while(index >= 0){
-      var tweet = streams.users.shawndrost[index];
-      var $tweet = $('<div class="tweet"><div class="tweet_date">' +tweet.created_at + '</div><div class="tweet_msg">' + tweet.message + '</div><div class="tweet_user '+tweet.user+'">' + tweet.user + '</div></div>');
-      $tweet.fadeIn(500).appendTo($twitterContent);
-      index -= 1;
-    }
-    $("#home").text('Return Home');
-    $('#twitter_status').text('@shawndrost\'s tweets');
-  });
-
- $(document).on('click', '.sharksforcheap', function() {
-    $twitterContent.html('');
-    var index = streams.users.sharksforcheap.length - 1;
-    while(index >= 0){
-      var tweet = streams.users.sharksforcheap[index];
-      var $tweet = $('<div class="tweet"><div class="tweet_date">' +tweet.created_at + '</div><div class="tweet_msg">' + tweet.message + '</div><div class="tweet_user '+tweet.user+'">' + tweet.user + '</div></div>');
-      $tweet.fadeIn(500).appendTo($twitterContent);
-      index -= 1;
-    }
-    $("#home").text('Return Home');
-    $('#twitter_status').text('@sharksforcheap\'s tweets');
-  });
-
- $(document).on('click', '.mracus', function() {
-    $twitterContent.html('');
-    var index = streams.users.mracus.length - 1;
-    while(index >= 0){
-      var tweet = streams.users.mracus[index];
-      var $tweet = $('<div class="tweet"><div class="tweet_date">' +tweet.created_at + '</div><div class="tweet_msg">' + tweet.message + '</div><div class="tweet_user '+tweet.user+'">' + tweet.user + '</div></div>');
-      $tweet.fadeIn(500).appendTo($twitterContent);
-      index -= 1;
-    }
-    $("#home").text('Return Home');
-    $('#twitter_status').text('@mracus\'s tweets');
-  });
-
- $(document).on('click', '.douglascalhoun', function() {
-    $twitterContent.html('');
-    var index = streams.users.douglascalhoun.length - 1;
-    while(index >= 0){
-      var tweet = streams.users.douglascalhoun[index];
-      var $tweet = $('<div class="tweet"><div class="tweet_date">' +tweet.created_at + '</div><div class="tweet_msg">' + tweet.message + '</div><div class="tweet_user '+tweet.user+'">' + tweet.user + '</div></div>');
-      $tweet.fadeIn(500).appendTo($twitterContent);
-      index -= 1;
-    }
-    $("#home").text('Return Home');
-    $('#twitter_status').text('@douglascalhoun\'s tweets');
-  });
-});
-    </script> 
-
   </body>
 </html>
-
-
-
-
 
 
 
