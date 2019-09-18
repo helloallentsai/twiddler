@@ -41,13 +41,13 @@ body {
 .header {
 	text-align: left;
 	font-size: 50px;
-	margin-left: 10px;
+	margin-left: 15px;
 	color: #5a7f8a;
 }
 
 .twitter_container {
 	width: 500px;
-	margin-left: 10px
+	margin-left: 15px
 }
 
 #twitter_status {
@@ -58,9 +58,10 @@ body {
 .tweet {
 	background-color: lightblue;
 	padding: 10px;
-	border-radius: 10px;
+	border-radius: 8px;
 	border-width: 0.5px;
 	border-style: dashed;
+	margin: 3px;
 }
 .tweet_date {
 	font-size: 11px;
