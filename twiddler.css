@@ -77,22 +77,24 @@ body {
 	padding: 10px;
 	font-style: italic;
 	color: #1e4f5c;
+	border-radius: 2px;
 }
 
 .tweet_user {
 	font-size: 14px;
 	color: grey;
-	padding: 2px;
+	padding: 2px 0px 2px 10px;
 	background-color: white;
 	border-style: solid;
 	cursor: pointer;
+	border-radius: 2px;
 }
 
 .shawndrost:hover,
 .sharksforcheap:hover,
 .mracus:hover,
 .douglascalhoun:hover {
-  color: #0298F5;
+  color: #06acd1;
 }
 
 #home {

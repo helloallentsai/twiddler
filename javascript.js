@@ -47,7 +47,7 @@ $(document).ready(function(){
  
  function tweetHover() {
    $('.tweet').hover(function() {
-      $(this).css('background-color', '#6fc6d2');
+      $(this).css('background-color', '#84d5f0');
     }, function() {
       $(this).css('background-color', 'lightblue');
     })
