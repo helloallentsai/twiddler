@@ -1,5 +1,6 @@
 $(document).ready(function(){
   var $body = $('.twitter_content');
+ 
 
   var index = streams.home.length - 1;
   while(index >= 0){
@@ -21,8 +22,9 @@ $(document).ready(function(){
       });
       index -= 1;
     }
-    $("#home").text('Refresh for New Tweets');
+    $("#home").text('refresh for new tweets');
     $('#twitter_status').text('latest tweets');
+    tweetHover();
   });
 
  //filter by username 
@@ -38,8 +40,17 @@ $(document).ready(function(){
       index -= 1;
     }
     
-    $("#home").text('Return Home');
+    $("#home").text('return home');
     $('#twitter_status').text('@'+inputName+'\'s tweets');
+    tweetHover();
   });
-
+ 
+ function tweetHover() {
+   $('.tweet').hover(function() {
+      $(this).css('background-color', '#6fc6d2');
+    }, function() {
+      $(this).css('background-color', 'lightblue');
+    })
+  }
+  tweetHover();
 });
