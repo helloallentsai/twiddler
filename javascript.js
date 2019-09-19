@@ -16,11 +16,13 @@ $(document).ready(function(){
     while(index >= 0){
       var tweet = streams.home[index];
       var $tweet = $('<div class="tweet"><div class="tweet_date">' + tweet.created_at + '</div><div class="tweet_msg">' + tweet.message + '</div><div class="tweet_user '+tweet.user+'">' + tweet.user + '</div></div>');
-      $tweet.fadeIn(500).appendTo($body);
+      $tweet.fadeIn(500).appendTo($body, function(){
+
+      });
       index -= 1;
     }
     $("#home").text('Refresh for New Tweets');
-    $('#twitter_status').text('Latest Tweets');
+    $('#twitter_status').text('latest tweets');
   });
 
  //filter by username 
