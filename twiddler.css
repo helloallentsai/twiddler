@@ -45,6 +45,14 @@ body {
 	color: #5a7f8a;
 }
 
+.header a {
+	text-decoration: none;
+}
+
+.header a:visited {
+	color: #5a7f8a;
+}
+
 .twitter_container {
 	width: 500px;
 	margin-left: 15px
