@@ -41,7 +41,7 @@ body {
 .header {
 	text-align: left;
 	font-size: 50px;
-	margin-left: 15px;
+	margin-left: 50px;
 	color: #5a7f8a;
 }
 
@@ -55,7 +55,7 @@ body {
 
 .twitter_container {
 	width: 500px;
-	margin-left: 15px
+	margin-left: 50px;
 }
 
 #twitter_status {
